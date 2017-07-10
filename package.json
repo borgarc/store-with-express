@@ -1,0 +1,23 @@
+{
+  "name": "store-with-express",
+  "version": "1.0.0",
+  "description": "Computer store on express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borgarc/store-with-express.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Borja Garcia Villanueva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borgarc/store-with-express/issues"
+  },
+  "homepage": "https://github.com/borgarc/store-with-express#readme"
+}
