@@ -6,5 +6,5 @@ var cpu = [
     { name: 'cpu5', price: 550, src:'./images/cpu/cpu5.jpg' },
     { name: 'cpu6', price: 650, src:'./images/cpu/cpu6.jpg' },
     { name: 'cpu7', price: 750, src:'./images/cpu/cpu7.jpg' },
-    { name: 'cpu8', price: 850, src:'./images/cpu/cpu8.jpg' }
+    { name: 'cpu8', price: 1050, src:'./images/cpu/cpu8.jpg' }
 ];
