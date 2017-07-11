@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/borgarc/store-with-express/issues"
   },
-  "homepage": "https://github.com/borgarc/store-with-express#readme"
+  "homepage": "https://github.com/borgarc/store-with-express#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
