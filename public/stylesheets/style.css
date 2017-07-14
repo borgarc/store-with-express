@@ -5,6 +5,17 @@ html, body {
     padding: 0;
 }
 
+#app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
 .tab {
     position: fixed;
     top: 0;
@@ -33,4 +44,23 @@ html, body {
 
 .nav-center a:hover {
     background: #00ace6;
+}
+
+.tabcontent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    width: 840px;
+    height: 400px;
+    flex-flow: row wrap;
+
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    margin-right: 5px;
+    margin-left: 5px
 }
