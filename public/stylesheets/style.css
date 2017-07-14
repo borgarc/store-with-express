@@ -1,0 +1,66 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab {
+    position: fixed;
+    top: 0;
+    background-color: deepskyblue;
+    width: 100%;
+    height: 5,5%;
+}
+
+.nav-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-center a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.nav-center a:hover {
+    background: #00ace6;
+}
+
+.tabcontent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    width: 840px;
+    height: 400px;
+    flex-flow: row wrap;
+
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    margin-right: 5px;
+    margin-left: 5px
+}
