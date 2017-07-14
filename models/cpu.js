@@ -1,4 +1,4 @@
-var cpu = [
+module.exports = [
     { name: 'cpu1', price: 150, src:'./images/cpu/cpu1.jpg' },
     { name: 'cpu2', price: 250, src:'./images/cpu/cpu2.jpg' },
     { name: 'cpu3', price: 350, src:'./images/cpu/cpu3.jpg' },
