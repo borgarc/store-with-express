@@ -1,4 +1,4 @@
-var motherboards = [
+module.exports = [
     { name: 'motherboard1', price: 175, src: './images/motherboards/motherboard1.jpg' },
     { name: 'motherboard2', price: 275, src: './images/motherboards/motherboard2.jpg' },
     { name: 'motherboard3', price: 375, src: './images/motherboards/motherboard3.jpg' },

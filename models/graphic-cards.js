@@ -1,4 +1,4 @@
-var cards = [
+module.exports = [
     { name: 'graphic1', price: 100, src: './images/graphics/graphic1.jpg' },
     { name: 'graphic2', price: 200, src: './images/graphics/graphic2.jpg' },
     { name: 'graphic3', price: 300, src: './images/graphics/graphic3.jpg' },
