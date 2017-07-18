@@ -3,15 +3,15 @@ var btns = btnsContainer.getElementsByTagName('a');
 var container = document.getElementById('content');
 
 [].forEach.call(btns, function (btn) {
+    var componentType = btn.dataset.type;
     btn.addEventListener('click', function () {
         $.ajax({
             url: 'api/components',
             type: 'GET',
-            /*data : {
-                type: 'graphic-cards'
-            },*/
+            data : {
+                type: componentType
+            },
             success: function (components) {
-                console.log(components);
                 deleteImages(container);
                 displayImages(components, container);
             },
@@ -19,7 +19,7 @@ var container = document.getElementById('content');
                 console.log("Request: " + JSON.stringify(request));
             }
         });
-    })
+    });
 });
 
 function displayImages(images, container) {
@@ -27,7 +27,6 @@ function displayImages(images, container) {
         var tag = document.createElement('IMG');
         tag.setAttribute('src', img.src);
         tag.className = 'image';
-        //tag.style.width = '200px';
         container.appendChild(tag);
     });   
 }
