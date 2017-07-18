@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var cpus = require('./models/cpu'); 
+var cpu = require('./models/cpu'); 
 var graphicCards = require('./models/graphic-cards'); 
 var motherboards = require('./models/motherboards'); 
 
@@ -16,7 +16,7 @@ app.get('/api/components', function(req, res){
 
     switch(req.query.type){
         case 'cpus':
-            components = cpus;
+            components = cpu.getAll();
         break;
         case 'graphic-cards':
             components = graphicCards;

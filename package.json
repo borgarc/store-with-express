@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/borgarc/store-with-express#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "mysql": "^2.13.0"
   }
 }
