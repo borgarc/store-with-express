@@ -9,9 +9,7 @@ const connection = () => {
         database: 'components'
     });
 
-    return {
-        getConnection: pool.getConnection
-    }
+    return pool;
 }
 
 module.exports = connection();

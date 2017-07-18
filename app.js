@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var cpu = require('./models/cpu'); 
-var graphicCards = require('./models/graphic-cards'); 
-var motherboards = require('./models/motherboards'); 
+var graphicCard = require('./models/graphic-cards'); 
+var motherboard = require('./models/motherboards'); 
 
 app.use(express.static('public'));
 
@@ -16,17 +16,26 @@ app.get('/api/components', function(req, res){
 
     switch(req.query.type){
         case 'cpus':
-            components = cpu.getAll();
+            cpu.getAll((err, result) => {
+                res.setHeader('Content-Type', 'application/json');
+                res.send(JSON.stringify(result)); 
+            });
         break;
         case 'graphic-cards':
-            components = graphicCards;
+            graphicCard.getAll((err, result) => {
+                res.setHeader('Content-Type', 'application/json');
+                res.send(JSON.stringify(result)); 
+            });
         break;
         case 'motherboards':
-            components = motherboards;
+            motherboard.getAll((err, result) => {
+                res.setHeader('Content-Type', 'application/json');
+                res.send(JSON.stringify(result)); 
+            });
         break;
     }
-    res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(components));
+    /*res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(components));*/
 });
 
 app.listen(3000, function(){
